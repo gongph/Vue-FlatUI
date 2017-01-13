@@ -1,0 +1,36 @@
+{
+  "name": "Vue-FlatUI",
+  "version": "1.0.0",
+  "description": "A Flat UI components libs based on vue2.0",
+  "main": "index.js",
+  "repository": "git@github.com:gongph/Vue-FlatUI.git",
+  "author": "gongph <gongph@foxmail.com>",
+  "scripts": {
+  	"dev": "cross-env NODE_ENV=development webpack-dev-server --content-base docs/ --open --inline --hot",
+  	"build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "flat",
+    "ui",
+    "flatUi",
+    "flat ui",
+    "FLATUI",
+    "components",
+    "bootstrap",
+    "web ui"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "cross-env": "^3.1.4",
+    "vue": "^2.1.8",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.8",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
