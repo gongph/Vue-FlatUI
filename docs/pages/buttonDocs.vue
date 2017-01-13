@@ -178,8 +178,40 @@
   &lt;v-button primary&gt;Right&lt;/v-button&gt;
 &lt;/v-buttons&gt;
 </pre>		
-					
-
+					<p>
+						The last thing to say is the button-toolbar, it can be a combination of <code>v-buttons</code> into a <code>v-button-toolbar</code> can be made more complex components, like this:
+					</p>
+					<p class="mbl">
+						<v-button-toolbar>
+							<v-buttons>
+								<v-button primary>1</v-button>
+								<v-button primary>2</v-button>
+								<v-button primary>3</v-button>
+							</v-buttons>
+							<v-buttons>
+								<v-button success>4</v-button>
+								<v-button success>5</v-button>
+							</v-buttons>
+							<v-buttons>
+								<v-button default>6</v-button>
+							</v-buttons>
+						</v-button-toolbar>
+					</p>
+<pre class="prettyprint">&lt;v-button-toolbar&gt;
+&lt;v-buttons&gt;
+	&lt;v-button primary>1&lt;/v-button&gt;
+	&lt;v-button primary>2&lt;/v-button&gt;
+	&lt;v-button primary>3&lt;/v-button&gt;
+&lt;/v-buttons&gt;
+&lt;v-buttons&gt;
+	&lt;v-button success>4&lt;/v-button&gt;
+	&lt;v-button success>5&lt;/v-button&gt;
+&lt;/v-buttons&gt;
+&lt;v-buttons&gt;
+	&lt;v-button default>6&lt;/v-button&gt;
+&lt;/v-buttons&gt;
+&lt;/v-button-toolbar&gt;
+</pre>	
 
 	    		</div>
 	    	</div>
