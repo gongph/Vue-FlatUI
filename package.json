@@ -21,6 +21,9 @@
     "bootstrap",
     "web ui"
   ],
+  "bugs": {
+    "url": "https://github.com/gongph/Vue-FlatUI/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.21.0",
