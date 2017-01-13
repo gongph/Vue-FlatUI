@@ -16,8 +16,7 @@
 	    				<v-button primary size="xs">Xs button</v-button>
 	    			</p>
 
-<pre class="prettyprint">
-&lt;v-button primary size="hg"&gt;Hg Button&lt;/v-button&gt;
+<pre class="prettyprint">&lt;v-button primary size="hg"&gt;Hg Button&lt;/v-button&gt;
 &lt;v-button primary size="lg"&gt;Lg Button&lt;/v-button&gt;
 &lt;v-button primary size="sm"&gt;Sm Button&lt;/v-button&gt;
 &lt;v-button primary size="xs"&gt;Xs Button&lt;/v-button&gt;
@@ -29,8 +28,7 @@
 					<p class="mb1">
 						<v-button primary embossed>Embossed Button</v-button>
 					</p>
-<pre class="prettyprint">
-&lt;v-button primary embossed&gt; 
+<pre class="prettyprint">&lt;v-button primary embossed&gt; 
   Embossed Button 
 &lt;/v-button&gt;
 </pre>
@@ -41,8 +39,7 @@
 			            <v-button primary wide class="mrm">Save</v-button>
 			            <v-button default wide>Cancel</button>
 		            </p>
-<pre class="prettyprint">
-&lt;v-button default wide&gt; 
+<pre class="prettyprint">&lt;v-button default wide&gt; 
   Cancel
 &lt;/v-button&gt;
 </pre>
@@ -52,8 +49,7 @@
 		            <p class="mbl">
 			            <v-button primary tip text="$300">Save</button>
 		            </p>
-<pre class="prettyprint">
-&lt;v-button primary tip text="$300"&gt; 
+<pre class="prettyprint">&lt;v-button primary tip text="$300"&gt; 
   Save
 &lt;/v-button&gt;
 </pre>	
@@ -71,8 +67,7 @@
 		            	<v-button warning class="mrs">Warning</v-button>
 		            	<v-button inverse class="mrs">Inverse</v-button>
 		            </p> 
-<pre class="prettyprint">
-&lt;v-button default&gt;Default&lt;/v-button&gt;
+<pre class="prettyprint">&lt;v-button default&gt;Default&lt;/v-button&gt;
 &lt;v-button primary&gt;Primary&lt;/v-button&gt;
 &lt;v-button info&gt;Info&lt;/v-button&gt;
 &lt;v-button danger&gt;Danger&lt;/v-button&gt;
@@ -87,8 +82,8 @@
 					<p class="mbl">
 						<v-button primary disabled>Disabled Button</v-button>
 					</p>
-<pre class="prettyprint">
-&lt;v-button primary disabled&gt;Disabled Button&lt;/v-button&gt;
+<pre class="prettyprint">&lt;v-button primary disabled&gt;Disabled Button&lt;/v-button&gt;
+// or
 &lt;v-button primary disabled="disabled"&gt;Disabled Button&lt;/v-button&gt;
 </pre>	 
 					<p class="ptl">
@@ -97,18 +92,14 @@
 					<p class="mbl">
 						<v-button primary active>Active Button</v-button>
 					</p>
-<pre class="prettyprint">
-&lt;v-button primary active&gt;Active Button&lt;/v-button&gt;
-</pre>	 
+<pre class="prettyprint">&lt;v-button primary active&gt;Active Button&lt;/v-button&gt;</pre>	 
 					<p class="ptl">
 						You can add a <code>block</code> prop to the button, you can stretch it to the width of the parent element 100%, and the button becomes a block level (block) element.
 					</p>
 					<p class="mbl">
 						<v-button primary block>Block level button</v-button>
 					</p>
-<pre class="prettyprint">
-&lt;v-button primary block&gt;Block level button&lt;/v-button&gt;
-</pre>
+<pre class="prettyprint">&lt;v-button primary block&gt;Block level button&lt;/v-button&gt;</pre>
 
 					<p class="ptl">
 						You can also use the <code>tag</code> prop to specify that the button component is rendered as a <code>&lt;a&gt;</code> tag
@@ -116,10 +107,78 @@
 					<p class="mbl">
 						<v-button primary tag="a" href="http://www.baidu.com">Link Button</v-button>
 					</p>
-<pre class="prettyprint">
-&lt;v-button primary tag="a" href="http://www.baidu.com"&gt;Link button&lt;/v-button&gt;
-</pre>
+<pre class="prettyprint">&lt;v-button primary tag="a" href="/your_url"&gt;Link button&lt;/v-button&gt;</pre>
 
+					<p class="ptl">
+						Of course, in addition to the above, you can also be a <code>&lt;v-buttons&gt;</code> will be a combination of buttons, like this:
+					</p>
+					<p class="mbl">
+						<v-buttons>
+							<v-button primary>Save</v-button>
+							<v-button info>Edit</v-button>
+							<v-button danger>Delete</v-button>
+						</v-buttons>
+					</p>
+<pre class="prettyprint">&lt;v-buttons&gt;
+  &lt;v-button primary&gt;Save&lt;/v-button&gt;
+  &lt;v-button info&gt;Edit&lt;/v-button&gt;
+  &lt;v-button danger&gt;Delete&lt;/v-button&gt;
+&lt;/v-buttons&gt;
+</pre>
+					<p>
+						Using <code>vertical</code> to change the direction of the button group
+					</p>
+					<p class="mbl">
+						<v-buttons vertical>
+							<v-button primary>Save</v-button>
+							<v-button info>Edit</v-button>
+							<v-button danger>Delete</v-button>
+						</v-buttons>
+					</p>
+<pre class="prettyprint">&lt;v-buttons vertical&gt;
+  &lt;v-button primary&gt;Save&lt;/v-button&gt;
+  &lt;v-button info&gt;Edit&lt;/v-button&gt;
+  &lt;v-button danger&gt;Delete&lt;/v-button&gt;
+&lt;/v-buttons&gt;
+</pre>						
+					<p>
+						Using <code>lg</code>, <code>sm</code>, <code>xs</code> prop attributes can change the size of the button group.
+					</p>
+					<p class="mbl">
+						<v-buttons lg>
+							<v-button primary>Left</v-button>
+							<v-button primary>Middle</v-button>
+							<v-button primary>Right</v-button>
+						</v-buttons>
+					</p>
+					<p class="mbl">
+						<v-buttons>
+							<v-button primary>Left</v-button>
+							<v-button primary>Middle</v-button>
+							<v-button primary>Right</v-button>
+						</v-buttons>
+					</p>
+					<p class="mbl">
+						<v-buttons sm>
+							<v-button primary>Left</v-button>
+							<v-button primary>Middle</v-button>
+							<v-button primary>Right</v-button>
+						</v-buttons>
+					</p>
+					<p class="mbl">
+						<v-buttons xs>
+							<v-button primary>Left</v-button>
+							<v-button primary>Middle</v-button>
+							<v-button primary>Right</v-button>
+						</v-buttons>
+					</p>
+<pre class="prettyprint">&lt;v-buttons lg&gt;
+  &lt;v-button primary&gt;Left&lt;/v-button&gt;
+  &lt;v-button primary&gt;Middle&lt;/v-button&gt;
+  &lt;v-button primary&gt;Right&lt;/v-button&gt;
+&lt;/v-buttons&gt;
+</pre>		
+					
 
 
 	    		</div>
