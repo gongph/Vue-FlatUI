@@ -37,6 +37,13 @@
 &lt;v-form-input type="checkbox" id="checkbox4" label 
 	disabled&gt;Checkbox&lt;/v-form-input&gt;
 </pre>
+					<p class="pvm">
+						<h6>Methods:</h6>
+					</p>
+					
+					<p>
+						Please refer to <a href="http://designmodo.github.io/Flat-UI/docs/components.html#fui-checkbox" target="_blank">the methods</a> provided by Flat UI
+					</p>
 					<div class="pvm">
 						<h6>Events:</h6>
 					</div>
