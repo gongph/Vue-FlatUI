@@ -1,5 +1,5 @@
 # Vue-FlatUI
-A Flat UI component library based on vue2.0
+A Flat UI component library based on vue2.0 [Flat-UI Website](http://designmodo.github.io/Flat-UI/docs/components.html)
 ![preview](./preview.png)
 
 ## Usage
