@@ -5,11 +5,7 @@
 			var textEl, buttonEl, tagName, self = this;
 
 			if (self.text && self.tip) {
-				textEl = c('span', {
-					class: {
-						'btn-tip': true
-					}
-				}, self.text)
+				textEl = c('span', { class: { 'btn-tip': true }}, self.text)
 			}
 
 			if (self.tag && self.tag === 'a') {
@@ -21,6 +17,7 @@
 			}
 
 			buttonEl = c(tagName, {
+				staticClass: 'btn',
 				class: self.classObject,
 				attrs: self.attrsObject,
 				on: {

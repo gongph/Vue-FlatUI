@@ -38,7 +38,7 @@
 
 			},
 			classObject () {
-				var self = this, co = { btn: true };
+				var self = this, co = {};
 
 				['default','primary','info','danger','success','warning','inverse','block','wide','embossed'].forEach(function(prop, index) {
 					if (self[prop]) co['btn-' + prop] = true 

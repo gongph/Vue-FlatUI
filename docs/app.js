@@ -6,6 +6,7 @@ import MainDocs from './pages/mainDocs.vue'
 import ButtonDocs from './pages/buttonDocs.vue'
 import CheckboxDocs from './pages/checkboxDocs.vue'
 import RadioDocs from './pages/radioDocs.vue'
+import DropDownDocs from './pages/dropdownDocs.vue'
 
 Vue.use(VueFlatUi)
 
@@ -15,6 +16,7 @@ new Vue({
 		'main-docs': MainDocs,
 		'button-docs': ButtonDocs,
 		'checkbox-docs': CheckboxDocs,
-		'radio-docs': RadioDocs
+		'radio-docs': RadioDocs,
+		'dropdown-docs': DropDownDocs
 	}
 })

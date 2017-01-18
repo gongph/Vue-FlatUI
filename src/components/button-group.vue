@@ -2,9 +2,7 @@
 	export default {
 		render: function (c) {
 			var self = this;
-			return c('div', {
-				class: self.classObject
-			}, self.$slots.default)
+			return c('div', { class: self.classObject }, self.$slots.default)
 		},
 		computed: {
 			classObject () {

@@ -67,9 +67,7 @@
 
 			// div.form-group
 			if (self.group && self.label) {
-				formGroupEl = c('div', {
-					staticClass: 'form-group',
-				}, [labelEl]);
+				formGroupEl = c('div', { staticClass: 'form-group' }, [labelEl]);
 			}
 
 			if (!labelEl && !formGroupEl) return inputEl
